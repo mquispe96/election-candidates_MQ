@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card';
 
 const List = () => {
     const candidateNames = [
@@ -12,8 +13,17 @@ const List = () => {
         "Sean Patrick Maloney", "Chris Jacobs", "Joe Morelle"
     ];
 
+    const candidatesList = candidateNames.map((candidate, idx) => (<Card key = {idx} candidate={candidate}/>))
+
   return (
-    <div>List</div>
+    <section className="candidates">
+      <div className="header">
+        <h1>People</h1>
+      </div>
+      <div className="list">
+        {candidatesList}
+      </div>
+    </section>
   )
 }
 

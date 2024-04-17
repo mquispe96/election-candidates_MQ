@@ -1,1 +1,1 @@
-[MY-APP](election-candidates-mq.netlify.app)
+[MY-APP](https://election-candidates-mq.netlify.app/)
